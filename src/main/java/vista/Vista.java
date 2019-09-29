@@ -51,6 +51,11 @@ public class Vista extends javax.swing.JFrame {
 
         jLabel4.setText("Yen :");
 
+        txtDolar.setEnabled(false);
+
+        txtEuro.setEnabled(false);
+
+        txtYen.setEnabled(false);
         txtYen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtYenActionPerformed(evt);

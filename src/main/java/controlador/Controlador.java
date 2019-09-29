@@ -50,7 +50,7 @@ public class Controlador implements ActionListener{
         }
     }
     
-    public String titulo(){
+    public  String titulo(){
     
         String cadena = "Conversor de Moneda Local";
         vista.lbTitulo.setText(cadena);
