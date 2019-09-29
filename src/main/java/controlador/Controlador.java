@@ -42,8 +42,10 @@ public class Controlador implements ActionListener{
             modelo.setPeso(Double.parseDouble(vista.txtPeso.getText()));       
             modelo.convertirDolar();
             modelo.convertirYen();
+            modelo.convertirEuro();
             vista.txtDolar.setText(String.valueOf(modelo.getDolar()));
             vista.txtYen.setText(String.valueOf(modelo.getYen()));
+            vista.txtEuro.setText(String.valueOf(modelo.getEuro()));
             vista.lbError.setText("");
         } catch(NumberFormatException e){
             vista.lbError.setText("Error de Conversion");

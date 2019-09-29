@@ -60,5 +60,9 @@ public class Modelo {
         return yen;
     }
     
+      public double convertirEuro(){
     
+        this.euro = this.peso * 3.771;
+        return euro;
+    }
 }
