@@ -47,9 +47,6 @@ public class Controlador implements ActionListener{
         } catch(NumberFormatException e){
             vista.lbError.setText("Error de Conversion");
         }
-      
-        
-    
     }
     
     public String titulo(){
