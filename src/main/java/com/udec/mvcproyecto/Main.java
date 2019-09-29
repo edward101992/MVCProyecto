@@ -11,7 +11,8 @@ import vista.Vista;
 
 /**
  *
- * @author SuperUs
+ * @author Edward Ramos
+ * @author Victor Preciado
  */
 public class Main {
 

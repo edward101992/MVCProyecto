@@ -12,10 +12,14 @@ import vista.Vista;
 
 /**
  *
- * @author SuperUs
+ * @author Edward Ramos
+ * @author Victor Preciado
  */
 public class Controlador implements ActionListener{
-
+   /**
+    * variable vista
+    * variable modelo 
+    */
     private Vista vista;
     private Modelo modelo;
 
