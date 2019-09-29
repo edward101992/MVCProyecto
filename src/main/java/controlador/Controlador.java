@@ -37,13 +37,17 @@ public class Controlador implements ActionListener{
         
     }   
     
-    public void asignarValor(){
-        modelo.setPeso(Double.parseDouble(vista.txtPeso.getText()));
-        
-        modelo.convertirDolar();
-        modelo.convertirYen();
-        vista.txtDolar.setText(String.valueOf(modelo.getDolar()));
-        vista.txtYen.setText(String.valueOf(modelo.getYen()));
+    public void asignarValor(){        
+        try{
+            modelo.setPeso(Double.parseDouble(vista.txtPeso.getText()));       
+            modelo.convertirDolar();
+            modelo.convertirYen();
+            vista.txtDolar.setText(String.valueOf(modelo.getDolar()));
+            vista.txtYen.setText(String.valueOf(modelo.getYen()));
+        } catch(NumberFormatException e){
+            vista.lbError.setText("Error de Conversion");
+        }
+      
         
     
     }

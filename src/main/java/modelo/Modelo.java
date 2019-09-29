@@ -48,7 +48,7 @@ public class Modelo {
         this.yen = yen;
     }
     
-     public double convertirDolar(){
+      public double convertirDolar(){
         
         this.dolar = this.peso * 0.00029;
         return peso;
