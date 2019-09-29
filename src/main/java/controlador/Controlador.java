@@ -44,6 +44,7 @@ public class Controlador implements ActionListener{
             modelo.convertirYen();
             vista.txtDolar.setText(String.valueOf(modelo.getDolar()));
             vista.txtYen.setText(String.valueOf(modelo.getYen()));
+            vista.lbError.setText("");
         } catch(NumberFormatException e){
             vista.lbError.setText("Error de Conversion");
         }
