@@ -45,6 +45,8 @@ public class Vista extends javax.swing.JFrame {
         lbError = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(0, 0, 0));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         btnConvertir.setBackground(new java.awt.Color(0, 0, 0));
         btnConvertir.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
@@ -56,6 +58,9 @@ public class Vista extends javax.swing.JFrame {
         txtPeso.setBackground(new java.awt.Color(0, 0, 0));
         txtPeso.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         txtPeso.setForeground(new java.awt.Color(0, 255, 51));
+        txtPeso.setCaretColor(new java.awt.Color(255, 255, 255));
+        txtPeso.setDisabledTextColor(new java.awt.Color(255, 0, 0));
+        txtPeso.setSelectionColor(new java.awt.Color(255, 255, 51));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         jLabel1.setText("Pesos Colombianos :");
@@ -72,16 +77,19 @@ public class Vista extends javax.swing.JFrame {
         txtDolar.setBackground(new java.awt.Color(0, 0, 0));
         txtDolar.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         txtDolar.setForeground(new java.awt.Color(0, 255, 0));
+        txtDolar.setCaretColor(new java.awt.Color(255, 255, 255));
         txtDolar.setEnabled(false);
 
         txtEuro.setBackground(new java.awt.Color(0, 0, 0));
         txtEuro.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         txtEuro.setForeground(new java.awt.Color(0, 255, 51));
+        txtEuro.setCaretColor(new java.awt.Color(255, 255, 255));
         txtEuro.setEnabled(false);
 
         txtYen.setBackground(new java.awt.Color(0, 0, 0));
         txtYen.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         txtYen.setForeground(new java.awt.Color(0, 255, 51));
+        txtYen.setCaretColor(new java.awt.Color(255, 255, 255));
         txtYen.setEnabled(false);
         txtYen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
