@@ -48,13 +48,13 @@ public class Controlador implements ActionListener{
             vista.txtEuro.setText(String.valueOf(modelo.getEuro()));
             vista.lbError.setText("");
         } catch(NumberFormatException e){
-            vista.lbError.setText("Error de Conversion");
+            vista.lbError.setText("*** Error de Conversion ***");
         }
     }
     
     public  String titulo(){
     
-        String cadena = "Conversor de Moneda Local";
+        String cadena = "|Conversor de Moneda Local|";
         vista.lbTitulo.setText(cadena);
         return cadena;
     }

@@ -62,7 +62,7 @@ public class Modelo {
     
       public double convertirEuro(){
     
-        this.euro = this.peso * 3.771;
+        this.euro = this.peso * 0.00027;
         return euro;
     }
 }
