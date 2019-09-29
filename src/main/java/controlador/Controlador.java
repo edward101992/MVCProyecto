@@ -11,18 +11,28 @@ import modelo.Modelo;
 import vista.Vista;
 
 /**
- *
+ *Esta clase es la encargada de responder 
+ * a eventos y peticiones e invoca al modelo
+ * cuando hay una solicitud de información
+ * esta clase es la intermediaria entre 
+ * la vista y el modelo.
  * @author Edward Ramos
  * @author Victor Preciado
  */
 public class Controlador implements ActionListener{
    /**
-    * variable vista
-    * variable modelo 
+    * variable  vista de tipo objeto
+    * variable modelo de tipo objeto
     */
     private Vista vista;
     private Modelo modelo;
-
+    /**
+     * contructor que recibe dos parametros
+     * recibe informacion de las clases
+     * y la acción del boton 
+     * @param vista
+     * @param modelo 
+     */
     public Controlador(Vista vista, Modelo modelo) {
         this.vista = vista;
         this.modelo = modelo;
@@ -40,7 +50,13 @@ public class Controlador implements ActionListener{
         vista.setLocationRelativeTo(null);
         
     }   
-    
+    /**
+     * este metodo es el encargado de la 
+     * asigacion de valores al modelo y 
+     * a la vista que es operado en el 
+     * modelo y enviados por el controlador
+     * 
+     */
     public void asignarValor(){        
         try{
             modelo.setPeso(Double.parseDouble(vista.txtPeso.getText()));       
@@ -55,7 +71,11 @@ public class Controlador implements ActionListener{
             vista.lbError.setText("*** Error de Conversion ***");
         }
     }
-    
+    /**
+     * este metodo es el encargado de 
+     * mostrar el titulo del programa
+     * @return cadena
+     */
     public  String titulo(){
     
         String cadena = "|Conversor de Moneda Local|";
@@ -64,6 +84,12 @@ public class Controlador implements ActionListener{
     }
 
     @Override
+    /**
+     * este metodo es el encargado llamar 
+     * al metodo asignarValor y producir el
+     * evento del boton para
+     *  asignar los valores de modelo y vista.
+     */
     public void actionPerformed(ActionEvent e) {
         asignarValor();
     }

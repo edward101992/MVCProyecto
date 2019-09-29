@@ -6,7 +6,9 @@
 package vista;
 
 /**
- *
+ * Esta clase es la encargada de mostrar la 
+ * información adecuada para interactuar con el
+ * usuario(interfaz de usuario).
  * @author Edward Ramos
  * @author Victor Preciado
  */
@@ -14,6 +16,8 @@ public class Vista extends javax.swing.JFrame {
 
     /**
      * Creates new form Vista
+     * este metodo levanta los componentes
+     * y es usado como constructor
      */
     public Vista() {
         initComponents();
@@ -160,7 +164,11 @@ public class Vista extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    /**
+     * Cumple la funcion de respuesta a un evento al
+     * accionar un boton
+     * @param evt 
+     */
     private void txtYenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtYenActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtYenActionPerformed
@@ -192,8 +200,13 @@ public class Vista extends javax.swing.JFrame {
         }
         //</editor-fold>
 
-        /* Create and display the form */
+      
+        /**
+         * este metodo hace el llamado al hilo
+         * Create and display the form
+         */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            
             public void run() {
                 new Vista().setVisible(true);
             }
